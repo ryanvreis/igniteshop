@@ -10,6 +10,7 @@ import { HomeContainer, Product } from "../styles/pages/home";
 
 import "keen-slider/keen-slider.min.css";
 import Stripe from "stripe";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 interface HomeProps {
   products: {
@@ -53,6 +54,7 @@ export default function Home({ products }: HomeProps) {
           );
         })}
       </HomeContainer>
+      <GoogleTagManager gtmId="G-RHW2ET0CT3" />
     </>
   );
 }
